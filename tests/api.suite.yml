@@ -1,0 +1,11 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - \Helper\Api
+        - REST:
+              url: "http://yourwebsite.com"
+              depends: PhpBrowser
+              part: Json
+params:
+    username: "username"
+    password: "password"
